@@ -1,0 +1,287 @@
+h1,h2,h3,h4,h5,h6,figure,p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 920px;
+    margin: 0 auto;
+}
+
+#encabezado {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+}
+
+#titulos h1 { font-size: 1.2em}
+#titulos h2 { font-size: 1em}
+#titulos h3 { font-size: 0.9em}
+#titulos h4 { font-size: 0.8em}
+
+#barra-navegacion {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#barra-navegacion li {
+    display: inline-block;
+    padding: 0;
+}
+
+#barra-navegacion ul ul {
+    display: none;
+}
+
+#barra-navegacion a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: darkgray;
+    transition: 0.5s;
+}
+
+#barra-navegacion ul {
+    padding: 0;
+}
+
+#barra-navegacion > ul > li > a:hover {
+    background-color: lightgray;
+}
+
+
+#nota-principal {
+    height: 380px;
+    margin: 20px 0;
+    margin-bottom: 35px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px darkgray;
+}
+
+#nota-principal img {
+    border: 10px solid white;
+}
+
+#notas-secundarias {
+    min-height: 300px;
+    width: 700px;
+    display: inline-block;
+    float: left;
+}
+
+#nota-secundaria h2 {
+    margin-bottom: 15;
+    font-variant: small-caps;
+    line-height: 0.8em;
+    font-family: "Trajan Pro Regular";
+}
+
+#notas-secundarias article {
+    display: flex;
+    background-image: url('../images/separador-nota-secundaria.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+.imagen-nota-secundaria {
+    position: relative;
+}
+
+.sombra-imagen {
+    box-shadow: 0 0 5px #bdbdbd;
+}
+
+.imagen-nota-secundaria span {
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    padding: 5px 10px;
+    background-color: lightgray;
+}
+
+.titulo-nota-secundaria {
+    font-size: 1.7em;
+    line-height: 0.9em;
+    font-variant: small-caps;
+}
+.cuerpo-nota-secundaria {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.intro-nota-secundaria {
+    text-align: justify;
+    margin: 10px 0;
+    font-family: "Trajan Pro Regular";
+}
+
+figure {
+    margin: 0 0 20px;
+}
+
+#notas-secundarias figure {
+    position: relative;
+}
+
+#notas-secundarias figure span {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    padding: 5px 20px;
+    background-color: lightgray;
+    box-shadow: 1px 1px 3px darkgray:
+}
+
+.cuerpo-nota-secundaria {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.intro-nota-secundaria {
+    text-align: justify;
+    padding: 10px 0;
+}
+
+.titulo-nota-secundaria {
+    font-variant: small-caps;
+    line-height: 0.9em;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.titulo-nota-secundaria a {
+    color: #b92025;
+    text-decoration: none;
+}
+
+.titulo-nota-secundaria a:hover {
+    color: #2a6496;
+    text-decoration: underline;
+}
+
+.ver-mas {
+    margin: 0 !important;
+    padding: 2px !important;
+    background-color: #b92025;
+    display: inline-block;
+}
+
+.ver-mas div {
+    background-color: #b92025;
+    border: 1px solid white;
+    padding: 2px;
+}
+
+.ver-mas p {
+    padding: 0 20px;
+    color: white;
+    font-weight: bold;
+}
+
+#anuncios {
+    min-height: 290px;
+    width: 210px;
+    padding: 5px;
+    float: right;
+}
+
+#anuncios > img {
+    margin: 3px 0;
+}
+
+#pie {
+    clear: both;
+    height: 150px;
+}
+
+.boton {
+    background: #AA3521;
+    display: inline-block;
+    padding: 3px;
+    box-shadow: 0px 1px 3px darkgray;
+}
+.boton>div {
+    padding: 1px 20px;
+    border: 1px solid rgba(255,255,255,.7);
+}
+.boton p {
+    color: white;
+    font-variant: small-caps;
+    font-size: 1.1em;
+}
+
+article {
+    display: flex;
+    background-image: url(fondo.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+#parrafo {
+    text-align: justify;
+    margin: 10px 0;
+    padding-top: 5px;
+    line-height: 1.2em;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+.separador-sems {
+    padding: 5px 0;
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+}
+
+.separador-sems a::before, .separador-sems a::after {
+    content: "";
+    border-top: 3px double lightgray;
+    width: 38%;
+    position: absolute;
+    top: 35px;
+}
+
+.separador-sems a::after {
+    right: 0;
+}
+
+.separador-sems::before {
+    left: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.text-center {
+    text-align:center;
+}
+
+.facebook, .twitter {
+    text-indent: -9999px;
+    display:inline-block;
+    width: 33px;
+    height: 33px;
+}
+
+.facebook {
+    background: url('../imagenes/facebook_twitter.png') 0 0;
+}
+
+.twitter {
+    background: url('../imagenes/facebook_twitter.png') -43px 0;
+}
+
+.facebook:hover {
+    background: url('../imagenes/facebook_twitter.png') 0 -43px;
+}
+
+.twitter:hover {
+    background: url('../imagenes/facebook_twitter.png') -43px -43px;
+}
